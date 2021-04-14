@@ -11,7 +11,7 @@ char *read_line(void)
 	size_t n_bytes = 0;
 	ssize_t b_read = 0;
 
-	write(STDOUT_FILENO, "$", 1);
+	_printf("$");
 	b_read = getline(&string, &n_bytes, stdin); /*getline*/
 	if (b_read == -1)
 	{
