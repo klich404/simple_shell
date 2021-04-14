@@ -6,16 +6,16 @@
  * @n_string: a string that contains all the arguments in the command line
   */
 
-void empty_cmd_check(char *n_string)
+int empty_cmd_check(char *n_string)
 {
-	int k;
+	int k = 0;
 
-	for (k = 0; n_string[k] == 32; k++)
-		;
+	while (n_string[k] == 32)
+		k++;
 	if (n_string[k] == 00)
 	{
-		free(n_string);
-		exit(0);
+		return (0);
 	}
+	return (1);
 }
 
