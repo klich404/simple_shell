@@ -40,7 +40,7 @@ void slash_to_cmd(__attribute__((unused)) int linecounter, char *tokenizer, char
 		}
 		tokenizer = strtok(NULL, ":");
 		free(command);
-		command =NULL;
+		command = NULL;
 	}
 	write(STDOUT_FILENO, "command not found\n", 18);
 	free_cmd(argv);
