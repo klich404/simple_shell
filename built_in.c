@@ -25,7 +25,7 @@ int built_in(char **argv)
 			{
 				for (k = 0; environ[k] != NULL; k++)
 				{
-					write(STDOUT_FILENO, "error", 5);
+					_printf("%s\n", environ[k]);
 				}
 				free_cmd(argv);
 				return (1);
