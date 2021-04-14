@@ -22,8 +22,6 @@ int non_interactive_mode(void)
 		{
 			full_route_cmd(linecounter, cmd_line);
 			free(string);
-			free(n_string);
-			free_cmd(n_cmd_line);
 		}
 		else
 		{

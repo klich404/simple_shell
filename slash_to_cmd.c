@@ -40,6 +40,7 @@ void slash_to_cmd(int linecounter, char *tokenizer, char **argv)
 		}
 		tokenizer = strtok(NULL, ":");
 		free(command);
+		command =NULL;
 	}
 	_printf("%d : %s: command not found\n", linecounter, argv[0]);
 	free_cmd(argv);
