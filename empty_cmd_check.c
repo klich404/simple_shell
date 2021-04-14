@@ -8,17 +8,18 @@
 
 void empty_cmd_check(char *n_string)
 {
-	int k = 0;
+	int k;
 
-	while (n_string[k] == ' ')
+	for (k = 0; n_string[k] == 32; k++)
 	{
-		if (n_string[k + 1])
-			k++;
-		else
-		{
-			free(n_string);
-			exit(0);
-		}
+		printf("%i\n", k);
 	}
+	if (n_string[k] == 00)
+	{
+		printf("SE ENCONTRO CARACTER NULO");
+		free(n_string);
+		exit(0);
+	}
+	return;
 }
 

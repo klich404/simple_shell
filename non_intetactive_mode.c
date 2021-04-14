@@ -12,6 +12,8 @@ int non_interactive_mode(void)
 	char **cmd_line = NULL, *string = NULL, **n_cmd_line = NULL;
 
 	n_string = n_read_line();
+	printf("%s\n", n_string);
+	empty_cmd_check(n_string);
 	n_cmd_line = n_com_storer(n_string);
 	while (n_cmd_line[i])
 	{
@@ -32,8 +34,6 @@ int non_interactive_mode(void)
 					tokenizer = strtok(env_copy, ":");
 					free(env_copy);
 					free(string);
-					free(n_string);
-					free_cmd(n_cmd_line);
 					slash_to_cmd(linecounter, tokenizer, cmd_line);
 					break;
 				}
