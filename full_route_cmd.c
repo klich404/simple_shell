@@ -28,7 +28,6 @@ void full_route_cmd(int linecounter, char **argv)
 		if (pid != 0)
 		{
 			wait(&status);
-			free_cmd(argv);
 		}
 		if (pid == 0)
 			execve(argv[0], argv, environ); /*execve*/
