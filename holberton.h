@@ -11,7 +11,7 @@
 #include <sys/stat.h>
 
 extern char **environ;
-
+void empty_cmd_check(char *n_string);
 int interactive_mode(void);
 int non_interactive_mode(void);
 char **com_storer(char *string);
