@@ -10,7 +10,6 @@ char *n_read_line(void)
 	char *string = NULL;
 	ssize_t b_read = 0;
 
-	write(STDOUT_FILENO, "$", 1);
 	string = malloc(sizeof(char) * 4096);
 	b_read = read(STDIN_FILENO, string, 4096); /*read*/
 	if (b_read == -1)
