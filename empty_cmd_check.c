@@ -17,7 +17,7 @@ void empty_cmd_check(char *n_string)
 		else
 		{
 			free(n_string);
-			exit();
+			exit(0);
 		}
 	}
 }
