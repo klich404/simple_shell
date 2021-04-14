@@ -7,7 +7,7 @@
  * @argv: is the command to excecute
  */
 
-void slash_to_cmd(int linecounter, char *tokenizer, char **argv)
+void slash_to_cmd(__attribute__((unused)) int linecounter, char *tokenizer, char **argv)
 {
 	char *command = NULL;
 	struct stat st;
@@ -42,6 +42,6 @@ void slash_to_cmd(int linecounter, char *tokenizer, char **argv)
 		free(command);
 		command =NULL;
 	}
-	_printf("%d : %s: command not found\n", linecounter, argv[0]);
+	write(STDOUT_FILENO, "command not found\n", 18);
 	free_cmd(argv);
 }

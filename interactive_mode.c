@@ -41,7 +41,7 @@ int interactive_mode(void)
 				}
 			}
 			if (_strncmp(environ[k], path, 4) != 0)
-				_printf("PATH not found\n");
+				write(STDOUT_FILENO, "PATH not found\n", 15);
 		}
 	}
 	free(string);

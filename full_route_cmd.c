@@ -8,7 +8,7 @@
  * @
  */
 
-void full_route_cmd(int linecounter, char **argv)
+void full_route_cmd(__attribute__((unused)) int linecounter, char **argv)
 {
 	struct stat st;
 	pid_t pid;
@@ -33,6 +33,6 @@ void full_route_cmd(int linecounter, char **argv)
 			execve(argv[0], argv, environ); /*execve*/
 	}
 	else
-		_printf("%d : %s: command not found\n", linecounter, argv[0]);
+		write(STDOUT_FILENO, "command not found\n", 18);
 	free_cmd(argv);
 }
