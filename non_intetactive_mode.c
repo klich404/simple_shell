@@ -12,11 +12,14 @@ int non_interactive_mode(void)
 	char **cmd_line = NULL, *string = NULL, **n_cmd_line = NULL;
 
 	n_string = n_read_line();
-	empty_cmd_check(n_string);
 	n_cmd_line = n_com_storer(n_string);
-	while (n_cmd_line[i])
+	for (; n_cmd_line[i]; i++)
 	{
 		linecounter++;
+		if (!empty_cmd_check(n_cmd_line[i]))
+		{
+			continue;
+		}
 		string = _strdup(n_cmd_line[i]); /*LIBERAR*/
 		cmd_line = com_storer(string);
 		if (cmd_line[0][0] == '/')
@@ -39,7 +42,6 @@ int non_interactive_mode(void)
 			if (_strncmp(environ[k], path, 4) != 0)
 				_printf("PATH not found\n");
 		}
-		i++;
 	}
 	free_cmd(n_cmd_line);
 	free(n_string);
