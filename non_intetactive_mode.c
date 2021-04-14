@@ -12,7 +12,6 @@ int non_interactive_mode(void)
 	char **cmd_line = NULL, *string = NULL, **n_cmd_line = NULL;
 
 	n_string = n_read_line();
-	printf("%s\n", n_string);
 	empty_cmd_check(n_string);
 	n_cmd_line = n_com_storer(n_string);
 	while (n_cmd_line[i])
