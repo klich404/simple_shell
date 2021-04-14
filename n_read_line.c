@@ -10,7 +10,7 @@ char *n_read_line(void)
 	char *string = NULL;
 	ssize_t b_read = 0;
 
-	printf("$");
+	_printf("$");
 	string = malloc(sizeof(char) * BUFSIZ);
 	b_read = read(STDIN_FILENO, string, BUFSIZ); /*read*/
 	if (b_read == -1)
