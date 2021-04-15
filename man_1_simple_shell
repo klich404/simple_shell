@@ -1,0 +1,131 @@
+.TH "simple_shell" "1" "2021-04-14" "v1.0" "simple_shell man page"
+.SH NAME
+simple_shell
+.PP
+.SH SYNOPSIS
+.B #include "holberton.h"
+.B int main(void)
+.PP
+.SH DESCRIPTION
+The \fBsimple_shell\fP This simple implementation of a shell that can handle both modes: Interactive\
+and non interactive, and any command available in the enviroment and additional arguments, and some\
+simple bult-ins.
+.PP
+.SH COMMANDS
+Any command available in the PATH can be run in this implementation of a shell.
+commands such as:
+-ls
+-pwd
+-ps
+-echo
+and so on.
+.PP
+It can also handle any addition arguments to the commands, such as:
+-ls -la
+-ls -t
+-etc.
+.PP
+When non valid commands or arguments are typed, a error message will be diplayed on the screen,\
+specifying the the entered command was not found.
+.PP
+The shell can run on interactive as well as non interactive mode, and will accept direct commands\
+such as ls or pwd or ps, and commands with the full route specified such as /bin/ls or /bin/ls -la,\
+and any valid additional arguments like: /bin/ls -lt /tmp
+.PP
+.SH RETURN VALUE
+When the command line is successfully executed, the function will return 0, otherwise the return\
+value depends on the type of error.
+for instance:
+When command line is not valid: Return value --> 2
+If you need to check for specific return values, just type: echo $? after the execution of\
+the command entered.
+.SH EXAMPLES
+.PP
+Some commands you can run and its result:
+.PP
+julianeme@julianeme:~/simple_shell$  ./shell
+.br
+$ls
+.br
+README.md   _strcat.c   _strncmp.c  com_storer.c    full_route_cmd.c    main.c  non_intetactive_mode.c
+.br
+ssh _printf.c   _strcmp.c   empty_cmd_check.c   holberton.h n_com_storer.c  read_line.c  _printf_functions.c
+.br
+.br _strdup.c   built_in.c  free_cmd.c  interactive_mode.c  n_read_line.c   slash_to_cmd.c .br
+.PP
+$/bin/ls
+.br
+README.md   _strcat.c   _strncmp.c  com_storer.c    full_route_cmd.c    main.c  non_intetactive_mode.c
+.br
+ssh _printf.c   _strcmp.c   empty_cmd_check.c   holberton.h n_com_storer.c  read_line.c  _printf_functions.c
+.br
+_strdup.c   built_in.c  free_cmd.c  interactive_mode.c  n_read_line.c   slash_to_cmd.c
+.PP
+$/bin/ls -l
+.br
+total 124
+.br
+-rw-r--r-- 1 julianeme julianeme    15 Apr 14 10:38 README.md
+.br
+-rw-r--r-- 1 julianeme julianeme   906 Apr 14 17:29 _printf.c
+.br
+-rw-r--r-- 1 julianeme julianeme  1526 Apr 14 17:29 _printf_functions.c
+.br
+-rw-r--r-- 1 julianeme julianeme   576 Apr 14 10:30 _strcat.c
+.br
+-rw-r--r-- 1 julianeme julianeme   292 Apr 14 10:30 _strcmp.c
+.br
+-rw-r--r-- 1 julianeme julianeme   447 Apr 14 10:30 _strdup.c
+.br
+-rw-r--r-- 1 julianeme julianeme   362 Apr 14 10:30 _strncmp.c
+.br
+-rwxr-xr-x 1 julianeme julianeme 22576 Apr 14 16:23 a.out
+.br
+-rw-r--r-- 1 julianeme julianeme   505 Apr 14 17:29 built_in.c
+.br
+-rw-r--r-- 1 julianeme julianeme   729 Apr 14 10:30 com_storer.c
+.br
+-rw-r--r-- 1 julianeme julianeme   347 Apr 14 18:14 empty_cmd_check.c
+.br
+-rw-r--r-- 1 julianeme julianeme   238 Apr 14 10:30 free_cmd.c
+.br
+-rw-r--r-- 1 julianeme julianeme   728 Apr 14 17:29 full_route_cmd.c
+.br
+-rw-r--r-- 1 julianeme julianeme  1224 Apr 14 20:02 holberton.h
+.br
+-rw-r--r-- 1 julianeme julianeme   939 Apr 14 17:29 interactive_mode.c
+.br
+-rw-r--r-- 1 julianeme julianeme   193 Apr 14 10:35 main.c
+.br
+-rw-r--r-- 1 julianeme julianeme   737 Apr 14 10:35 n_com_storer.c
+.br
+-rw-r--r-- 1 julianeme julianeme   348 Apr 14 15:40 n_read_line.c
+.br
+-rw-r--r-- 1 julianeme julianeme  1103 Apr 14 20:03 non_intetactive_mode.c
+.br
+-rw-r--r-- 1 julianeme julianeme   372 Apr 14 17:29 read_line.c
+.br
+-rw-r--r-- 1 julianeme julianeme   975 Apr 14 20:03 slash_to_cmd.c
+.br
+-rwxr-xr-x 1 julianeme julianeme 22816 Apr 14 20:48 ssh
+.PP
+$^[[C^[[C^[[C
+.br
+2 :    : command not found
+.PP
+$exit
+.br
+julianeme@julianeme:~/simple_shell$ echo "/bin/ls" | ./ssh
+.PP
+$ echo "/bin/ls" | ./shell
+.br
+README.md   _strcat.c   _strncmp.c  com_storer.c    full_route_cmd.c    main.c  non_intetactive_mode.c
+.br
+ssh _printf.c   _strcmp.c   empty_cmd_check.c   holberton.h n_com_storer.c  read_line.c  _printf_functions.c
+.br
+_strdup.c   built_in.c  free_cmd.c  interactive_mode.c  n_read_line.c   slash_to_cmd.c
+.PP
+.SH AUTHORS
+\fIWritten by Carlos Cruz Zuluaga, Julian Tabares Velasquez\fP
+.SH SEE ALSO
+man sh (1)
