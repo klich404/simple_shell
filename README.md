@@ -1,12 +1,15 @@
 # Simple Shell
-An implementation of a Simple Shell that can handle both modes: Interactive and non interactive, and any command available in the enviroment and additional arguments, and some simple bult-ins.
-##  Install
+A Shell is a command interpreter that provides a graphical user interface to access the services of the
+operating system,a Shell is necessary to invoke or execute the different programs available
+on the computer, it can be used as an example Power Shell of Windows, in this Simple Shell implementation
+we can use it in two ways: interactive and non-interactive and you can make use of any command available
+in the environment, additional arguments and some built-ins.
 
+##  Install
 To run this implementation of simple shell, just download all the files in the following repository: [click here to download](https://github.com/klich404/simple_shell), compile and execute.
 This programs was writen and compiled using Ubuntu 18 and gcc 4.8.5.
 
 ## Features
-
 This version of a simple shell can:
 - Run in interactive and non interactive mode
 - handle all commands available in the PATH with addition arguments
@@ -18,15 +21,12 @@ This version of a simple shell can:
 - Handle the “end of file” condition (Ctrl+D)
 - Handle exit() and env built-in commands
 
-
 This programm is open source and can be accessed from the the public repository in Github linked above.
 
 ## Manual
-
 For more information about this function you can [read its man page in this link](https://github.com/klich404/simple_shell/blob/main/man_1_simple_shell).
 
 #### Examples
-
 Some commands you can run and its result
 
 ```sh
@@ -70,10 +70,8 @@ README.md   _strcat.c   _strncmp.c  com_storer.c    full_route_cmd.c    main.c  
 ```
 
 ## License
-
 **Free Software!**
 
 ## Autores
-
 **Carlos Cruz Zuluaga** - [klich404](https://github.com/klich404)
 **Julian Tabares Velasquez** - [julianeme](https://github.com/Julianeme)

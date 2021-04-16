@@ -7,9 +7,11 @@ simple_shell
 .B int main(void)
 .PP
 .SH DESCRIPTION
-The \fBsimple_shell\fP This simple implementation of a shell that can handle both modes: Interactive\
-and non interactive, and any command available in the enviroment and additional arguments, and some\
-simple bult-ins.
+A Shell is a command interpreter that provides a graphical user interface to access the services\
+of the operating system, A shell is necessary to invoke or execute the different programs\
+available on the computer, it can be used as an example Power Shell of Windows, in this Simple\
+Shell implementation we can use it in two ways: interactive and non-interactive and you can make\
+use of any command available in the environment, additional arguments and some built-ins.
 .PP
 .SH COMMANDS
 Any command available in the PATH can be run in this implementation of a shell.
