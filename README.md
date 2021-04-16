@@ -5,10 +5,10 @@ on the computer, it can be used as an example Power Shell of Windows, in this Si
 we can use it in two ways: interactive and non-interactive and you can make use of any command available
 in the environment, additional arguments and some built-ins.
 
-##  Install
+##  Install 💾
 To use this Simple Shell implementation you must clone the following [repository](https://github.com/klich404/simple_shell) on your local machine ```<git clone https://github.com/klich404/simple_shell.git>```, then you must compile all the files with the ".c" extension ```<gcc * .c>``` (preferably compile with gcc 4.8.4 on ubuntu 14.04 to avoid compilation errors), then just run the program with your preferred build name ```<./ a.out>```.
 
-## Features
+## Features 📋
 This version of a simple shell can:
 - Run in interactive and non interactive mode
 - handle all commands available in the PATH with addition arguments
@@ -22,10 +22,10 @@ This version of a simple shell can:
 
 This programm is open source and can be accessed from the the public repository in Github linked above.
 
-## Manual
+## Manual 📔
 For more information about this function you can [read its man page in this link](https://github.com/klich404/simple_shell/blob/main/man_1_simple_shell).
 
-#### Examples
+#### Examples ⚙️
 Some commands you can run and its result
 
 ```sh
@@ -68,9 +68,9 @@ README.md   _strcat.c   _strncmp.c  com_storer.c    full_route_cmd.c    main.c  
 
 ```
 
-## License
+## License 📄
 **Free Software!**
 
-## Autores
+## Autores ✒️
 **Carlos Cruz Zuluaga** - [klich404](https://github.com/klich404)
 **Julian Tabares Velasquez** - [julianeme](https://github.com/Julianeme)
