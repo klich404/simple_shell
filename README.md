@@ -23,7 +23,7 @@ This version of a simple shell can:
 This programm is open source and can be accessed from the the public repository in Github linked above.
 
 ## Manual 📔
-For more information about this function you can [read its man page in this link](https://github.com/klich404/simple_shell/blob/main/man_1_simple_shell).
+For more information about this program you can read our [man page](https://github.com/klich404/simple_shell/blob/main/man_1_simple_shell)
 
 ## Examples ⚙️
 Some commands you can run and its result
