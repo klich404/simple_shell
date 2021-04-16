@@ -4,7 +4,10 @@ simple_shell
 .PP
 .SH SYNOPSIS
 .B #include "holberton.h"
-.B int main(void)
+.PP
+.B int main(void) - propotype
+.PP
+.B shell [options] (file) - execute
 .PP
 .SH DESCRIPTION
 A Shell is a command interpreter that provides a graphical user interface to access the services\

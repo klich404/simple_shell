@@ -6,8 +6,7 @@ we can use it in two ways: interactive and non-interactive and you can make use 
 in the environment, additional arguments and some built-ins.
 
 ##  Install
-To run this implementation of simple shell, just download all the files in the following repository: [click here to download](https://github.com/klich404/simple_shell), compile and execute.
-This programs was writen and compiled using Ubuntu 18 and gcc 4.8.5.
+To use this Simple Shell implementation you must clone the following [repository](https://github.com/klich404/simple_shell) on your local machine ```<git clone https://github.com/klich404/simple_shell.git>```, then you must compile all the files with the ".c" extension ```<gcc * .c>``` (preferably compile with gcc 4.8.4 on ubuntu 14.04 to avoid compilation errors), then just run the program with your preferred build name ```<./ a.out>```.
 
 ## Features
 This version of a simple shell can:
